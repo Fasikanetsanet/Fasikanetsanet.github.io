@@ -1,1 +1,277 @@
+<!-- component -->
+<!DOCTYPE html>
+<html lang="id-ID">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Audio Video Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <style>
+          /*
+      You may need this for responsive background
+      header {
+      	background: url('bg-425.jpg');
+      }
+
+      @media only screen and (min-width:640px) {
+      	header {
+      		background: url('bg-640.jpg');
+      	}
+      }
+
+      @media only screen and (min-width:768px) {
+      	header {
+      		background: url('bg-768.jpg');
+      	}
+      }
+
+      @media only screen and (min-width:1024px) {
+      	header {
+      		background: url('bg-1024.jpg');
+      	}
+      }
+
+      @media only screen and (min-width:1025px) {
+      	header {
+      		background: url('bg-max.jpg');
+      	}
+      } */
+          /* Default background by https://www.pexels.com/@knownasovan */
+          header {
+            background:url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');}
+    </style>
+  </head>
+
+  <body>
+    <header id="up" class="bg-center bg-fixed bg-no-repeat bg-center bg-cover h-screen relative">
+      <!-- Overlay Background + Center Control -->
+      <div class="h-screen bg-opacity-50 bg-black flex items-center justify-center" style="background:rgba(0,0,0,0.5);">
+        <div class="mx-2 text-center">
+          <h1 class="text-gray-100 font-extrabold text-4xl xs:text-5xl md:text-6xl"><span class="text-white">A Documentary on</span></h1>
+          <h2 class="text-gray-200 font-extrabold text-3xl xs:text-4xl md:text-5xl leading-tight">Aleqa <span class="text-white">Gebre</span> Hanna</h2>
+        </div>
+      </div>
+    </header>
+
+    <div class="w-full">
+        <div class="h-2 bg-red-light"></div>
+        <div class="flex items-center justify-center  bg-red-lightest">
+          <div class="bg-white shadow-lg rounded-lg" style="width: 45rem !important;">
+            <div class="flex">
+              <div>
+                <img class="w-full rounded hidden md:block" src="https://tailwindcss.com/img/card-top.jpg" alt="Album Pic" />
+              </div>
+              <div class="w-full p-8">
+                <div class="flex justify-between">
+                  <div>
+                    <h3 class="text-2xl text-grey-darkest font-medium">Script</h3>
+                    <p class="text-sm text-grey mt-1">Aleka G.Hanna</p>
+                  </div>
+                  <div class="text-red-lighter">
+                    <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" /></svg>
+                  </div>
+                </div>
+                <div class="flex justify-between items-center mt-8">
+                    <a class="text-blue text-bold" href="https://raw.githubusercontent.com/Fasikanetsanet/documentary/master/script.pdf">Script File.pdf</a>
+                </div>
+              </div>
+            </div>
+            <div class="mx-8 py-4">
+              <div class="mt-1">
+                <div class="h-1 bg-grey-dark rounded-full">
+                  <div class="w-1/5 h-1 bg-red-light rounded-full relative">
+                    <span class="w-4 h-4 bg-red absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- component -->
+    <div class="w-full">
+      <div class="h-2 bg-red-light"></div>
+      <div class="flex items-center justify-center  bg-red-lightest">
+        <div class="bg-white shadow-lg rounded-lg" style="width: 45rem !important;">
+          <div class="flex">
+            <div>
+              <img class="w-full rounded hidden md:block" src="https://tailwindcss.com/img/card-top.jpg" alt="Album Pic" />
+            </div>
+            <div class="w-full p-8">
+              <div class="flex justify-between">
+                <div>
+                  <h3 class="text-2xl text-grey-darkest font-medium">Unedited Audio</h3>
+                  <p class="text-sm text-grey mt-1">Aleka G.Hanna</p>
+                </div>
+                <div class="text-red-lighter">
+                  <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" /></svg>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-8">
+                <audio src="https://raw.githubusercontent.com/Fasikanetsanet/documentary/master/unedited.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+          <div class="mx-8 py-4">
+            <div class="mt-1">
+              <div class="h-1 bg-grey-dark rounded-full">
+                <div class="w-1/5 h-1 bg-red-light rounded-full relative">
+                  <span class="w-4 h-4 bg-red absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="h-2 bg-red-light"></div>
+      <div class="flex items-center justify-center  bg-red-lightest">
+        <div class="bg-white shadow-lg rounded-lg" style="width: 45rem !important;">
+          <div class="flex">
+            <div>
+              <img class="w-full rounded hidden md:block" src="https://tailwindcss.com/img/card-top.jpg" alt="Album Pic" />
+            </div>
+            <div class="w-full p-8">
+              <div class="flex justify-between">
+                <div>
+                  <h3 class="text-2xl text-grey-darkest font-medium">Edited Audio</h3>
+                  <p class="text-sm text-grey mt-1">Aleka G.Hanna</p>
+                </div>
+                <div class="text-red-lighter">
+                  <svg class="w-6 h-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 3.22l-.61-.6a5.5 5.5 0 0 0-7.78 7.77L10 18.78l8.39-8.4a5.5 5.5 0 0 0-7.78-7.77l-.61.61z" /></svg>
+                </div>
+              </div>
+              <div class="flex justify-between items-center mt-8">
+                <audio src="https://raw.githubusercontent.com/Fasikanetsanet/documentary/master/edited1.mp3" controls></audio>
+              </div>
+            </div>
+          </div>
+          <div class="mx-8 py-4">
+            <div class="mt-1">
+              <div class="h-1 bg-grey-dark rounded-full">
+                <div class="w-1/5 h-1 bg-red-light rounded-full relative">
+                  <span class="w-4 h-4 bg-red absolute pin-r pin-b -mb-1 rounded-full shadow"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full">
+      <div class="h-2 bg-red-light"></div>
+      <div class="flex items-center justify-center  bg-red-lightest">
+        <div class="bg-white shadow-lg rounded-lg" style="width: 45rem !important;">
+          <div class="flex">
+            <div class="aspect-w-16 aspect-h-9">
+              <p class="text-sm text-grey mt-1">Aleka G.Hanna</p>
+              <iframe src="https://www.youtube.com/embed/yGBwTJYFOHM" width="720" height="480" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- component -->
+    <div class="flex p-4 w-10/12 mx-auto">
+      <div class=" w-full bg-gray-50 flex justify-center items-center">
+        <div class="h-56 w-72 absolute flex justify-center items-center">
+          <img class="object-cover h-20 w-20 rounded-full" src="https://source.unsplash.com/random" alt="" />
+        </div>
+
+        <div class="h-56 mx-4 w-5/6 bg-blue-400 rounded-3xl shadow-md sm:w-80 sm:mx-0">
+          <div class="h-1/2 w-full flex justify-between items-baseline px-3 py-5">
+            <h1 class="text-white">Section 4</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+
+          <div class="bg-white h-1/2 w-full rounded-3xl flex flex-col justify-around items-center">
+            <div class="w-full h-1/2 flex justify-between items-center px-3 pt-2">
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+            </div>
+            <div class="w-full h-1/2 flex flex-col justify-center items-center">
+              <h1 class="text-gray-700 font-bold">Surafel Muluye</h1>
+              <h1 class="text-gray-500 text-sm">A/UR14083/10</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class=" w-full bg-gray-50 flex justify-center items-center">
+        <div class="h-56 w-72 absolute flex justify-center items-center">
+          <img class="object-cover h-20 w-20 rounded-full" src="https://source.unsplash.com/random" alt="" />
+        </div>
+
+        <div class="h-56 mx-4 w-5/6 bg-blue-400 rounded-3xl shadow-md sm:w-80 sm:mx-0">
+          <div class="h-1/2 w-full flex justify-between items-baseline px-3 py-5">
+            <h1 class="text-white">Section 4</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+
+          <div class="bg-white h-1/2 w-full rounded-3xl flex flex-col justify-around items-center">
+            <div class="w-full h-1/2 flex justify-between items-center px-3 pt-2">
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+            </div>
+            <div class="w-full h-1/2 flex flex-col justify-center items-center">
+              <h1 class="text-gray-700 font-bold">Mulat Sallegn</h1>
+              <h1 class="text-gray-500 text-sm">A/UR15780/10</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class=" w-full bg-gray-50 flex justify-center items-center">
+        <div class="h-56 w-72 absolute flex justify-center items-center">
+          <img class="object-cover h-20 w-20 rounded-full" src="https://images.unsplash.com/photo-1484608856193-968d2be4080e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2134&q=80" alt="" />
+        </div>
+
+        <div class="h-56 mx-4 w-5/6 bg-blue-400 rounded-3xl shadow-md sm:w-80 sm:mx-0">
+          <div class="h-1/2 w-full flex justify-between items-baseline px-3 py-5">
+            <h1 class="text-white">Section 4</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="white">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+            </svg>
+          </div>
+
+          <div class="bg-white h-1/2 w-full rounded-3xl flex flex-col justify-around items-center">
+            <div class="w-full h-1/2 flex justify-between items-center px-3 pt-2">
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+              <div class="flex flex-col justify-center items-center">
+                <h1 class="text-gray-500 text-xs"></h1>
+                <h1 class="text-gray-600 text-sm"></h1>
+              </div>
+            </div>
+            <div class="w-full h-1/2 flex flex-col justify-center items-center">
+              <h1 class="text-gray-700 font-bold">Fasika Netsanet</h1>
+              <h1 class="text-gray-500 text-sm">A/UR14985/10</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
